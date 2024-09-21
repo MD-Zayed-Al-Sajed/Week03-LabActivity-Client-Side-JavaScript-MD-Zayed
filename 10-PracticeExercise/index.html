@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Operations</title>
+    
+  </head>
+  <body>
+    <h1>Array Operations</h1>
+
+    <!-- Container for Task 1: Average Marks -->
+    <div class="container" id="task1">
+      <h2>Task 1: Find Average Marks</h2>
+      <p>Enter marks separated by commas (e.g., 85, 90, 76, 95):</p>
+      <input type="text" id="marksInput" placeholder="Enter marks" />
+      <br />
+      <button id="averageMarks">Find Average Marks</button>
+      <p id="result-task1" class="result"></p>
+    </div>
+
+    <!-- Container for Task 2: Apply Discount -->
+    <div class="container" id="task2">
+      <h2>Task 2: Apply 10% Discount on Prices</h2>
+      <p>Enter prices separated by commas (e.g., 250, 645, 300, 900, 50):</p>
+      <input type="text" id="pricesInput" placeholder="Enter prices" />
+      <br />
+      <button id="applyDiscount">Apply 10% Discount</button>
+      <p id="result-task2" class="result"></p>
+    </div>
+
+    <!-- Container for Task 3: Modify Companies -->
+    <div class="container" id="task3">
+        <h2>Task 3: Modify Companies</h2>
+        <p id="currentCompanies">Current Companies: ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"]</p>
+        
+        <label for="addCompanyInput">Add a Company:</label>
+        <input type="text" id="addCompanyInput" placeholder="Enter company name to add" />
+        <br />
+      
+        <label for="deleteCompanyInput">Delete a Company:</label>
+        <input type="text" id="deleteCompanyInput" placeholder="Enter company name to delete" />
+        <br />
+      
+        <button id="modifyCompanies">Update Companies</button>
+        <p id="result-task3" class="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      color: #333;
+      text-align: center;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s;
+      margin: 5px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    button:active {
+      background-color: #388E3C;
+    }
+
+    .result {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    input[type="text"] {
+      padding: 5px;
+      margin: 5px;
+      width: 300px;
+    }
+  </style>
+</html>

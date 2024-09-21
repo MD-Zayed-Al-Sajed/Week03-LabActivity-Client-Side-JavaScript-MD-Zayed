@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Challenge</title>
+  </head>
+  <body>
+    <h1>Object Challenge</h1>
+
+    <div id="library-container"></div>
+
+    <h2>Change Book Titles</h2>
+    <label for="firstBookInput">First Book:</label>
+    <input type="text" id="firstBookInput" placeholder="Enter new title for first book" />
+    <br />
+
+    <label for="secondBookInput">Second Book:</label>
+    <input type="text" id="secondBookInput" placeholder="Enter new title for second book" />
+    <br />
+
+    <label for="thirdBookInput">Third Book:</label>
+    <input type="text" id="thirdBookInput" placeholder="Enter new title for third book" />
+    <br />
+
+    <button id="updateTitles">Update Titles</button>
+
+    <h2>Finish Reading All Books</h2>
+    <button id="finishReading">Finish Reading All Books</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+  }
+
+  h1, h2 {
+    color: #333;
+    text-align: center;
+  }
+
+  #library-container {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  #library-container p {
+    font-size: 18px;
+    color: #555;
+  }
+
+  label {
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+  }
+
+  input[type="text"] {
+    width: 250px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+
+  button:active {
+    background-color: #388E3C;
+  }
+
+  .input-section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .input-section label, .input-section input {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .input-section input {
+    width: 50%;
+  }
+</style>
